@@ -1,0 +1,87 @@
+.note_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.notes_container {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 70vw;
+    max-height: 60vh;
+    padding: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.notes_container::-webkit-scrollbar {
+    display: none;
+}
+
+.notes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.notes ul {
+    width: 100%;
+}
+
+.notes ul li {
+    background-color: rgba(43, 42, 42, 0.859);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 5px 20px;
+    color: #fff;
+    align-items: center;
+    width: 95%;
+}
+
+.deleteBtn {
+    background-color: #FF0000;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+    outline: none;
+    color: #1B1B1B;
+}
+
+.updateBtn {
+    background-color: #0000CD;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+    outline: none;
+    color: #fff;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    padding: .5vw 1vw;
+    gap: .2vw;
+}
+
+
+.text{
+    min-height: fit-content;
+}
+
+@media screen and (max-width: 769px) {
+    .notes_container {
+        width: 100vw;
+    }
+}
